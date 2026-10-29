@@ -1,0 +1,217 @@
+{
+  "dataset": {
+    "source_rows": 27468,
+    "source_columns": 10,
+    "source_missing_cells": 0,
+    "source_duplicate_rows": 0,
+    "invalid_dates": 0,
+    "negative_numeric_values": {
+      "petrol_usd_liter": 0,
+      "diesel_usd_liter": 0,
+      "lpg_usd_liter": 0,
+      "brent_crude_usd": 0,
+      "tax_percentage": 0
+    },
+    "clean_rows": 27468,
+    "removed_rows": 0,
+    "clean_missing_cells": 0,
+    "clean_duplicate_rows": 0,
+    "date_min": "2020-01-06",
+    "date_max": "2026-04-06",
+    "countries": 84,
+    "regions": 7,
+    "observations_per_country_min": 327,
+    "observations_per_country_max": 327
+  },
+  "overall_means": {
+    "petrol_usd_liter": 2.2819,
+    "diesel_usd_liter": 2.1338,
+    "lpg_usd_liter": 1.7115,
+    "brent_crude_usd": 107.9815,
+    "tax_percentage": 26.7745
+  },
+  "overall_medians": {
+    "petrol_usd_liter": 2.1165,
+    "diesel_usd_liter": 1.9545,
+    "lpg_usd_liter": 1.588,
+    "brent_crude_usd": 112.27,
+    "tax_percentage": 23.4
+  },
+  "regional_petrol_highest": {
+    "region": "Europe",
+    "avg": 3.7017
+  },
+  "regional_petrol_lowest": {
+    "region": "Middle East",
+    "avg": 1.2259
+  },
+  "regional_petrol_gap": 2.4758,
+  "yearly_average_fuel_prices": [
+    {
+      "year": 2020,
+      "observations": 4368,
+      "petrol_avg": 1.4849,
+      "diesel_avg": 1.3893,
+      "lpg_avg": 1.1136,
+      "brent_avg": 77.5874,
+      "tax_avg": 26.8649
+    },
+    {
+      "year": 2021,
+      "observations": 4368,
+      "petrol_avg": 2.2798,
+      "diesel_avg": 2.1312,
+      "lpg_avg": 1.71,
+      "brent_avg": 106.59,
+      "tax_avg": 26.6219
+    },
+    {
+      "year": 2022,
+      "observations": 4368,
+      "petrol_avg": 2.5052,
+      "diesel_avg": 2.3423,
+      "lpg_avg": 1.8789,
+      "brent_avg": 117.121,
+      "tax_avg": 27.0547
+    },
+    {
+      "year": 2023,
+      "observations": 4368,
+      "petrol_avg": 2.2337,
+      "diesel_avg": 2.0892,
+      "lpg_avg": 1.6754,
+      "brent_avg": 104.4258,
+      "tax_avg": 26.3709
+    },
+    {
+      "year": 2024,
+      "observations": 4452,
+      "petrol_avg": 2.5451,
+      "diesel_avg": 2.3799,
+      "lpg_avg": 1.909,
+      "brent_avg": 118.9949,
+      "tax_avg": 27.0283
+    },
+    {
+      "year": 2025,
+      "observations": 4368,
+      "petrol_avg": 2.5395,
+      "diesel_avg": 2.3741,
+      "lpg_avg": 1.9045,
+      "brent_avg": 118.7137,
+      "tax_avg": 26.6341
+    },
+    {
+      "year": 2026,
+      "observations": 1176,
+      "petrol_avg": 2.647,
+      "diesel_avg": 2.4743,
+      "lpg_avg": 1.985,
+      "brent_avg": 123.7479,
+      "tax_avg": 27.0236
+    }
+  ],
+  "income_level_averages": [
+    {
+      "income_level": "High",
+      "observations": 10464,
+      "petrol_avg": 3.5467,
+      "diesel_avg": 3.3496,
+      "lpg_avg": 2.6601,
+      "tax_avg": 34.7188
+    },
+    {
+      "income_level": "Low",
+      "observations": 7521,
+      "petrol_avg": 1.3889,
+      "diesel_avg": 1.2775,
+      "lpg_avg": 1.042,
+      "tax_avg": 22.8582
+    },
+    {
+      "income_level": "Middle",
+      "observations": 9483,
+      "petrol_avg": 1.5945,
+      "diesel_avg": 1.4713,
+      "lpg_avg": 1.1957,
+      "tax_avg": 21.1144
+    }
+  ],
+  "subsidy_level_averages": [
+    {
+      "subsidy_level": "High",
+      "observations": 3924,
+      "petrol_avg": 0.709,
+      "diesel_avg": 0.6503,
+      "lpg_avg": 0.5313,
+      "tax_avg": 15.0668
+    },
+    {
+      "subsidy_level": "Low",
+      "observations": 14388,
+      "petrol_avg": 3.4506,
+      "diesel_avg": 3.2445,
+      "lpg_avg": 2.588,
+      "tax_avg": 37.5494
+    },
+    {
+      "subsidy_level": "Medium",
+      "observations": 5886,
+      "petrol_avg": 1.6593,
+      "diesel_avg": 1.5195,
+      "lpg_avg": 1.2445,
+      "tax_avg": 14.8483
+    },
+    {
+      "subsidy_level": "Very High",
+      "observations": 3270,
+      "petrol_avg": 0.1478,
+      "diesel_avg": 0.1324,
+      "lpg_avg": 0.1115,
+      "tax_avg": 14.881
+    }
+  ],
+  "correlation_matrix": {
+    "petrol_usd_liter": {
+      "petrol_usd_liter": 1.0,
+      "diesel_usd_liter": 0.999,
+      "lpg_usd_liter": 0.9999,
+      "brent_crude_usd": 0.2592,
+      "tax_percentage": 0.5222
+    },
+    "diesel_usd_liter": {
+      "petrol_usd_liter": 0.999,
+      "diesel_usd_liter": 1.0,
+      "lpg_usd_liter": 0.999,
+      "brent_crude_usd": 0.2545,
+      "tax_percentage": 0.522
+    },
+    "lpg_usd_liter": {
+      "petrol_usd_liter": 0.9999,
+      "diesel_usd_liter": 0.999,
+      "lpg_usd_liter": 1.0,
+      "brent_crude_usd": 0.2592,
+      "tax_percentage": 0.5222
+    },
+    "brent_crude_usd": {
+      "petrol_usd_liter": 0.2592,
+      "diesel_usd_liter": 0.2545,
+      "lpg_usd_liter": 0.2592,
+      "brent_crude_usd": 1.0,
+      "tax_percentage": 0.0002
+    },
+    "tax_percentage": {
+      "petrol_usd_liter": 0.5222,
+      "diesel_usd_liter": 0.522,
+      "lpg_usd_liter": 0.5222,
+      "brent_crude_usd": 0.0002,
+      "tax_percentage": 1.0
+    }
+  },
+  "notes": [
+    "Dataset has no missing values or exact duplicate rows in the supplied source.",
+    "Dataset contains 84 countries with 327 weekly records per country in the supplied file.",
+    "These are descriptive associations; they do not establish causal effects.",
+    "The dataset's provenance and measurement methodology were not included with the upload; validate before policy or financial use."
+  ]
+}

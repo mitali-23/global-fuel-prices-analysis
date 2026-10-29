@@ -1,0 +1,85 @@
+country,region,income_level,subsidy_level,observations,petrol_avg,diesel_avg,lpg_avg,tax_avg,brent_avg
+Algeria,Africa,Middle,Very High,327,0.1405,0.1181,0.1059,15.1761,107.9815
+Angola,Africa,Low,High,327,0.5219,0.4728,0.3915,15.0541,107.9815
+Argentina,South America,Middle,High,327,0.6216,0.5703,0.4652,14.6162,107.9815
+Australia,Oceania,High,Low,327,3.4326,3.2776,2.5744,38.1006,107.9815
+Austria,Europe,High,Low,327,3.8111,3.656,2.8565,37.4985,107.9815
+Bangladesh,Asia,Low,Medium,327,1.3438,1.2101,1.0091,14.2691,107.9815
+Belgium,Europe,High,Low,327,4.3206,4.2101,3.2397,37.9202,107.9815
+Botswana,Africa,Middle,Low,327,2.2638,2.0766,1.6968,37.9963,107.9815
+Brazil,South America,Middle,Medium,327,2.0589,1.8415,1.544,15.0443,107.9815
+Cameroon,Africa,Low,Medium,327,1.3445,1.2348,1.008,14.6832,107.9815
+Canada,North America,High,Low,327,2.8796,2.6581,2.1607,36.1018,107.9815
+Chile,South America,High,Low,327,3.3251,2.9908,2.4948,36.5153,107.9815
+China,Asia,Middle,Medium,327,1.6183,1.5473,1.214,15.1281,107.9815
+Colombia,South America,Middle,Medium,327,1.6174,1.4737,1.2121,15.3434,107.9815
+Czech Republic,Europe,High,Low,327,3.4352,3.2118,2.5749,38.6141,107.9815
+Denmark,Europe,High,Low,327,4.543,4.3206,3.4062,38.8654,107.9815
+Ecuador,South America,Middle,High,327,0.5719,0.5186,0.4287,14.8865,107.9815
+Egypt,Africa,Low,Very High,327,0.1718,0.1633,0.1288,15.3881,107.9815
+Ethiopia,Africa,Low,Medium,327,1.413,1.2775,1.0609,14.926,107.9815
+Finland,Europe,High,Low,327,4.2552,4.1654,3.1923,36.6428,107.9815
+France,Europe,High,Low,327,4.1665,4.099,3.1242,36.9315,107.9815
+Germany,Europe,High,Low,327,4.2085,3.9888,3.1558,39.2131,107.9815
+Ghana,Africa,Low,Low,327,2.0671,1.897,1.5513,36.5517,107.9815
+Greece,Europe,High,Low,327,4.1004,3.7675,3.0754,35.9492,107.9815
+Hong Kong,Asia,High,Low,327,5.5406,5.097,4.1553,37.0049,107.9815
+Hungary,Europe,Middle,Medium,327,2.132,1.9873,1.5987,14.8593,107.9815
+India,Asia,Middle,Medium,327,1.6202,1.4731,1.214,14.8914,107.9815
+Indonesia,Asia,Middle,High,327,0.8821,0.8304,0.6605,16.0147,107.9815
+Iran,Middle East,Middle,Very High,327,0.0399,0.033,0.0311,13.8997,107.9815
+Iraq,Middle East,Middle,Very High,327,0.1641,0.1422,0.1222,15.0972,107.9815
+Ireland,Europe,High,Low,327,4.6538,4.5453,3.4899,38.715,107.9815
+Israel,Middle East,High,Low,327,4.2112,3.9449,3.1577,37.2419,107.9815
+Italy,Europe,High,Low,327,4.0998,4.0334,3.0766,36.8021,107.9815
+Ivory Coast,Africa,Low,Medium,327,1.4089,1.2777,1.0564,14.5902,107.9815
+Japan,Asia,High,Low,327,3.4353,3.2139,2.5757,36.8869,107.9815
+Jordan,Middle East,Middle,Medium,327,1.9137,1.7664,1.4341,14.6792,107.9815
+Kenya,Africa,Low,Low,327,2.2395,2.067,1.6791,37.7917,107.9815
+Kuwait,Middle East,High,Very High,327,0.1941,0.1766,0.1452,15.3229,107.9815
+Lebanon,Middle East,Middle,Low,327,3.1143,2.924,2.3376,35.756,107.9815
+Libya,Africa,Low,Very High,327,0.0564,0.0487,0.0423,15.2838,107.9815
+Malaysia,Asia,Middle,High,327,0.5697,0.5185,0.426,15.0116,107.9815
+Mexico,North America,Middle,High,327,0.9864,0.9131,0.7393,14.6529,107.9815
+Morocco,Africa,Middle,Medium,327,1.6934,1.5482,1.2717,13.9061,107.9815
+Mozambique,Africa,Low,Low,327,2.4126,2.2407,1.8092,38.2728,107.9815
+Myanmar,Asia,Low,High,327,0.757,0.6817,0.568,15.1832,107.9815
+Namibia,Africa,Middle,Low,327,2.3587,2.1708,1.7676,37.8841,107.9815
+Nepal,Asia,Low,Medium,327,1.6121,1.478,1.2082,15.0523,107.9815
+Netherlands,Europe,High,Low,327,4.6551,4.3227,3.4904,37.7951,107.9815
+New Zealand,Oceania,High,Low,327,3.8778,3.6555,2.9099,39.2734,107.9815
+Nigeria,Africa,Low,Very High,327,0.2132,0.1928,0.1609,14.3031,107.9815
+Norway,Europe,High,Low,327,4.7644,4.4311,3.5733,36.2413,107.9815
+Pakistan,Asia,Low,High,327,0.7135,0.6458,0.5357,15.2609,107.9815
+Peru,South America,Middle,Medium,327,1.7673,1.6193,1.3244,15.9679,107.9815
+Philippines,Asia,Middle,Low,327,2.3602,2.1709,1.7708,38.1875,107.9815
+Poland,Europe,Middle,Low,327,2.8313,2.6427,2.1225,36.4003,107.9815
+Portugal,Europe,High,Low,327,3.9889,3.8102,2.9921,36.6596,107.9815
+Qatar,Middle East,High,Very High,327,0.2326,0.2102,0.1751,13.9379,107.9815
+Romania,Europe,Middle,Low,327,2.6427,2.4545,1.9816,36.2872,107.9815
+Russia,Europe,Middle,High,327,0.7254,0.6746,0.5433,15.1633,107.9815
+Rwanda,Africa,Low,Low,327,2.4986,2.3287,1.8739,39.5639,107.9815
+Saudi Arabia,Middle East,High,Very High,327,0.2498,0.2215,0.1874,15.3627,107.9815
+Senegal,Africa,Low,Medium,327,1.4779,1.345,1.1082,14.6122,107.9815
+Singapore,Asia,High,Low,327,4.5427,4.2107,3.407,38.1804,107.9815
+South Africa,Africa,Middle,Low,327,2.5474,2.3592,1.911,37.1404,107.9815
+South Korea,Asia,High,Low,327,3.6556,3.4352,2.7427,37.1257,107.9815
+Spain,Europe,High,Low,327,3.8784,3.7678,2.9104,38.0884,107.9815
+Sri Lanka,Asia,Low,Medium,327,1.5457,1.4104,1.1594,14.7034,107.9815
+Sudan,Africa,Low,High,327,0.5684,0.521,0.4255,15.1416,107.9815
+Sweden,Europe,High,Low,327,4.4311,4.0998,3.3236,36.9994,107.9815
+Switzerland,Europe,High,Low,327,4.3869,4.1656,3.2912,37.9343,107.9815
+Taiwan,Asia,High,Low,327,2.8803,2.6594,2.1601,38.3324,107.9815
+Tanzania,Africa,Low,Low,327,2.1536,1.9809,1.6152,37.1639,107.9815
+Thailand,Asia,Middle,Medium,327,1.7675,1.621,1.3264,15.2183,107.9815
+Tunisia,Africa,Middle,High,327,0.677,0.6027,0.5075,14.7229,107.9815
+Turkey,Europe,Middle,Low,327,3.0214,2.8298,2.2661,38.9911,107.9815
+UAE,Middle East,High,High,327,0.9139,0.8546,0.6848,15.0933,107.9815
+Uganda,Africa,Low,Low,327,2.3279,2.1521,1.7456,37.5437,107.9815
+Ukraine,Europe,Middle,Medium,327,1.9883,1.842,1.4918,14.6067,107.9815
+United Kingdom,Europe,High,Low,327,4.0989,3.8785,3.0758,38.781,107.9815
+United States,North America,High,Low,327,2.3265,2.106,1.745,36.8694,107.9815
+Venezuela,South America,Low,Very High,327,0.0156,0.0174,0.0163,15.0382,107.9815
+Vietnam,Asia,Middle,Medium,327,1.5451,1.3985,1.1595,14.7881,107.9815
+Zambia,Africa,Low,Low,327,2.4977,2.3264,1.8732,38.2422,107.9815
+Zimbabwe,Africa,Low,Low,327,2.5842,2.4121,1.9382,37.1183,107.9815

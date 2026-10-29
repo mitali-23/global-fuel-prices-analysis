@@ -1,0 +1,5 @@
+subsidy_level,observations,petrol_avg,diesel_avg,lpg_avg,tax_avg
+High,3924,0.709,0.6503,0.5313,15.0668
+Low,14388,3.4506,3.2445,2.588,37.5494
+Medium,5886,1.6593,1.5195,1.2445,14.8483
+Very High,3270,0.1478,0.1324,0.1115,14.881

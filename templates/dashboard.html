@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Fuel Prices & Taxation | Dashboard</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+:root{--navy:#10233f;--blue:#2457d6;--cyan:#16b8a6;--bg:#f4f7fb;--card:#fff;--muted:#65748b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#18263c}
+header{background:linear-gradient(120deg,#10233f,#2457d6);color:white;padding:26px max(22px,calc((100% - 1400px)/2))}
+header h1{margin:0 0 8px;font-size:clamp(24px,3vw,36px)}header p{margin:0;color:#d9e6ff}
+nav{display:flex;gap:10px;margin-top:18px}nav a{color:white;text-decoration:none;padding:9px 14px;border:1px solid #8da8ed;border-radius:9px}nav a.active{background:white;color:var(--navy)}
+main{max-width:1400px;margin:22px auto;padding:0 18px}.filters,.metric,.chart{background:var(--card);border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 5px 20px #17345c0a}
+.filters{padding:16px;margin-bottom:18px;display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:10px;align-items:end}
+label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px}select,input{width:100%;padding:10px;border:1px solid #d6deeb;border-radius:8px;background:white}
+button,.reset{border:0;background:var(--blue);color:white;border-radius:8px;padding:11px 14px;font-weight:700;text-decoration:none;cursor:pointer;text-align:center}
+.reset{background:#e9eef8;color:var(--navy)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.metric{padding:18px}.metric .label{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}.metric .value{font-size:28px;font-weight:800;margin-top:8px;color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.chart{padding:8px;min-width:0}.chart.full{grid-column:1/-1}
+.note{background:#fff8e8;border:1px solid #f3dfaa;padding:13px 16px;border-radius:10px;color:#75551a;margin:16px 0;font-size:13px}
+footer{padding:24px;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:1050px){.filters{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.filters{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.chart.full{grid-column:auto}.metric .value{font-size:23px}}
+</style></head><body>
+<header><h1>Global Fuel Prices & Taxation</h1><p>Interactive exploration of petrol, diesel, LPG, crude oil and tax patterns · 2020–2026</p>
+<nav><a class="active" href="/">Dashboard</a><a href="/story">Data Story</a></nav></header>
+<main>
+<form class="filters" method="get">
+<div><label>Region</label><select name="region"><option value="">All regions</option>{% for v in filters.region %}<option value="{{v}}" {% if selected.get('region')==v %}selected{% endif %}>{{v}}</option>{% endfor %}</select></div>
+<div><label>Income level</label><select name="income_level"><option value="">All levels</option>{% for v in filters.income_level %}<option value="{{v}}" {% if selected.get('income_level')==v %}selected{% endif %}>{{v}}</option>{% endfor %}</select></div>
+<div><label>Subsidy level</label><select name="subsidy_level"><option value="">All levels</option>{% for v in filters.subsidy_level %}<option value="{{v}}" {% if selected.get('subsidy_level')==v %}selected{% endif %}>{{v}}</option>{% endfor %}</select></div>
+<div><label>Country</label><select name="country"><option value="">All countries</option>{% for v in filters.country %}<option value="{{v}}" {% if selected.get('country')==v %}selected{% endif %}>{{v}}</option>{% endfor %}</select></div>
+<div><label>Start date</label><input type="date" name="start_date" value="{{selected.get('start_date','')}}"></div>
+<div><label>End date</label><input type="date" name="end_date" value="{{selected.get('end_date','')}}"></div>
+<button type="submit">Apply filters</button><a class="reset" href="/">Reset</a></form>
+{% if no_data %}<div class="note">No records match these filters. Try resetting or widening the selected range.</div>{% else %}
+<section class="metrics">
+<div class="metric"><div class="label">Filtered records</div><div class="value">{{stats.rows}}</div></div>
+<div class="metric"><div class="label">Countries represented</div><div class="value">{{stats.countries}}</div></div>
+<div class="metric"><div class="label">Average petrol / litre</div><div class="value">{{stats.petrol}}</div></div>
+<div class="metric"><div class="label">Average tax percentage</div><div class="value">{{stats.tax}}</div></div>
+</section>
+<div class="grid">
+<div class="chart full"><div id="trend"></div></div><div class="chart"><div id="region"></div></div><div class="chart"><div id="income"></div></div>
+<div class="chart"><div id="tax"></div></div><div class="chart"><div id="corr"></div></div><div class="chart full"><div id="top"></div></div>
+</div>
+<div class="note"><b>Interpretation note:</b> These charts describe patterns in the supplied dataset. They do not establish that tax or subsidy levels cause observed prices. Dataset provenance and definitions were not included in the upload; validate before policy or financial use.</div>
+{% endif %}</main><footer>Global Fuel Prices & Taxation · Flask + SQLite + Plotly · Responsive layout</footer>
+{% if not no_data %}<script>
+const charts={{charts|tojson}};
+for (const id of Object.keys(charts)){Plotly.newPlot(id,charts[id].data,charts[id].layout,{responsive:true,displaylogo:false});}
+</script>{% endif %}</body></html>
